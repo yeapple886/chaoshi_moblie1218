@@ -1,0 +1,164 @@
+        @import url(base.less);
+        @color: #333;
+        @colorbg: #fff;
+        @colorActive: #f60;
+        @fontSmall: 14px;
+        @t_color01: #5aba85;
+        @t_color02: #6295ea;
+        @t_color03: #62d8b6;
+        @t_color04: #a98fdb;
+        @bdr_color: #ccc;
+        .titleName(@title-color) {
+            background: @colorbg;
+            strong {
+                display: block;
+                border-left: 4px solid @title-color;
+                padding: .5em;
+            }
+            font-size: @fontSmall+2;
+            border-bottom: 1px solid @bdr_color;
+            .more {
+                float: right;
+                font-size: @fontSmall+2;
+                color: @color*3;
+                margin-top: -1.5em;
+                margin-right: 1em;
+            }
+        }
+        
+        .mod_ {
+            &nav {
+                width: 375px;
+                background: @colorbg;
+                margin: 0 auto;
+                height: 3em;
+                text-align: center;
+                .clearfix();
+                li {
+                    display: inline-block;
+                    text-align: center;
+                    vertical-align: middle;
+                    padding-top: 0.8em;
+                    a {
+                        color: @color;
+                        font-size: @fontSmall+2;
+                        padding: 15px 30px;
+                        &:hover,
+                        .current {
+                            color: @colorActive;
+                            border-bottom: 2px solid @colorActive;
+                        }
+                    }
+                }
+            }
+            &banner {
+                height: 150px;
+                background: @colorActive;
+                ul.point {
+                    padding-top: 120px;
+                    text-align: center;
+                    li {
+                        width: 8px;
+                        height: 8px;
+                        display: inline-block;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, .5);
+                    }
+                    .curr {
+                        background: rgba(255, 255, 255, 1)
+                    }
+                }
+            }
+            &insurance_car {
+                background-color: #ededed;
+                h2 {
+                    .titleName(@t_color01);
+                }
+                dl.insur_list {
+                    position: relative;
+                    width: 100%;
+                    border-bottom: 1px solid @bdr_color;
+                    dt,
+                    dd {
+                        display: inline-block;
+                        padding: 1em .5em;
+                    }
+                    dd p {
+                        font-size: @fontSmall;
+                    }
+                    dd strong {
+                        font-size: @fontSmall+2;
+                        color: @color;
+                        padding-bottom: .5em;
+                        display: block;
+                    }
+                }
+                dl.diff {
+                    border-bottom: none;
+                }
+                .more {
+                    position: absolute;
+                    right: 1em;
+                    top: 40%;
+                }
+            }
+            &travel {
+                h2 {
+                    .titleName(@t_color02);
+                }
+            }
+            &education {
+                h2 {
+                    .titleName(@t_color03);
+                }
+            }
+            &disease {
+                h2 {
+                    .titleName(@t_color04);
+                }
+            }
+            &travel,
+            &education,
+            &disease {
+                padding-bottom: 1.5em;
+                margin-bottom: 1.5em;
+                background-color: @colorbg;
+                .prod_list {
+                    .kind_title {
+                        h3 {
+                            font-size: @fontSmall+2;
+                            color: @color;
+                            padding: 1.5em 0 .5em;
+                        }
+                        p {
+                            font-size: (@fontSmall/2)+6;
+                            color: @color*3;
+                            padding-bottom: 2em;
+                        }
+                        text-align: center;
+                    }
+                    .kind_diff {
+                        border-top: 1px solid @bdr_color;
+                        margin-top: 1em;
+                    }
+                    ul.kind_list {
+                        text-align: center;
+                        li {
+                            display: inline-block;
+                            padding: .5em 2em;
+                            em {
+                                color: @colorActive;
+                                font-size: @fontSmall+4;
+                                padding-left: .2em;
+                            }
+                        }
+                        .diff {
+                            border-right: 1px solid @bdr_color;
+                            padding-left: 2em;
+                        }
+                    }
+                }
+            }
+            &more{padding:1em 0; text-align: center; background: @colorbg;}
+        }

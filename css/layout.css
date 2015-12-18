@@ -1,0 +1,258 @@
+body,
+ul,
+ol,
+dl,
+li,
+dd,
+p,
+form,
+h1,
+h2,
+h3,
+em,
+strong,
+article,
+header {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+img {
+  border: 0;
+}
+body {
+  background-color: #ededed;
+  color: #999;
+  font-size: 14px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+a {
+  outline: 0;
+  border: none;
+  border: 0;
+  text-decoration: none;
+  color: #666;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
+}
+ul,
+li {
+  list-style: none;
+}
+input,
+textarea,
+select,
+button {
+  font: 1em;
+  outline: none;
+}
+.mod_nav {
+  width: 375px;
+  background: #fff;
+  margin: 0 auto;
+  height: 3em;
+  text-align: center;
+  *zoom: 1;
+}
+.mod_nav:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.mod_nav li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 0.8em;
+}
+.mod_nav li a {
+  color: #333;
+  font-size: 16px;
+  padding: 15px 30px;
+}
+.mod_nav li a:hover,
+.mod_nav li a .current {
+  color: #f60;
+  border-bottom: 2px solid #f60;
+}
+.mod_banner {
+  height: 150px;
+  background: #f60;
+}
+.mod_banner ul.point {
+  padding-top: 120px;
+  text-align: center;
+}
+.mod_banner ul.point li {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.mod_banner ul.point .curr {
+  background: #ffffff;
+}
+.mod_insurance_car {
+  background-color: #ededed;
+}
+.mod_insurance_car h2 {
+  background: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.mod_insurance_car h2 strong {
+  display: block;
+  border-left: 4px solid #5aba85;
+  padding: .5em;
+}
+.mod_insurance_car h2 .more {
+  float: right;
+  font-size: 16px;
+  color: #999999;
+  margin-top: -1.5em;
+  margin-right: 1em;
+}
+.mod_insurance_car dl.insur_list {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.mod_insurance_car dl.insur_list dt,
+.mod_insurance_car dl.insur_list dd {
+  display: inline-block;
+  padding: 1em .5em;
+}
+.mod_insurance_car dl.insur_list dd p {
+  font-size: 14px;
+}
+.mod_insurance_car dl.insur_list dd strong {
+  font-size: 16px;
+  color: #333;
+  padding-bottom: .5em;
+  display: block;
+}
+.mod_insurance_car dl.diff {
+  border-bottom: none;
+}
+.mod_insurance_car .more {
+  position: absolute;
+  right: 1em;
+  top: 40%;
+}
+.mod_travel h2 {
+  background: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.mod_travel h2 strong {
+  display: block;
+  border-left: 4px solid #6295ea;
+  padding: .5em;
+}
+.mod_travel h2 .more {
+  float: right;
+  font-size: 16px;
+  color: #999999;
+  margin-top: -1.5em;
+  margin-right: 1em;
+}
+.mod_education h2 {
+  background: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.mod_education h2 strong {
+  display: block;
+  border-left: 4px solid #62d8b6;
+  padding: .5em;
+}
+.mod_education h2 .more {
+  float: right;
+  font-size: 16px;
+  color: #999999;
+  margin-top: -1.5em;
+  margin-right: 1em;
+}
+.mod_disease h2 {
+  background: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.mod_disease h2 strong {
+  display: block;
+  border-left: 4px solid #a98fdb;
+  padding: .5em;
+}
+.mod_disease h2 .more {
+  float: right;
+  font-size: 16px;
+  color: #999999;
+  margin-top: -1.5em;
+  margin-right: 1em;
+}
+.mod_travel,
+.mod_education,
+.mod_disease {
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+  background-color: #fff;
+}
+.mod_travel .prod_list .kind_title,
+.mod_education .prod_list .kind_title,
+.mod_disease .prod_list .kind_title {
+  text-align: center;
+}
+.mod_travel .prod_list .kind_title h3,
+.mod_education .prod_list .kind_title h3,
+.mod_disease .prod_list .kind_title h3 {
+  font-size: 16px;
+  color: #333;
+  padding: 1.5em 0 .5em;
+}
+.mod_travel .prod_list .kind_title p,
+.mod_education .prod_list .kind_title p,
+.mod_disease .prod_list .kind_title p {
+  font-size: 13px;
+  color: #999999;
+  padding-bottom: 2em;
+}
+.mod_travel .prod_list .kind_diff,
+.mod_education .prod_list .kind_diff,
+.mod_disease .prod_list .kind_diff {
+  border-top: 1px solid #ccc;
+  margin-top: 1em;
+}
+.mod_travel .prod_list ul.kind_list,
+.mod_education .prod_list ul.kind_list,
+.mod_disease .prod_list ul.kind_list {
+  text-align: center;
+}
+.mod_travel .prod_list ul.kind_list li,
+.mod_education .prod_list ul.kind_list li,
+.mod_disease .prod_list ul.kind_list li {
+  display: inline-block;
+  padding: .5em 2em;
+}
+.mod_travel .prod_list ul.kind_list li em,
+.mod_education .prod_list ul.kind_list li em,
+.mod_disease .prod_list ul.kind_list li em {
+  color: #f60;
+  font-size: 18px;
+  padding-left: .2em;
+}
+.mod_travel .prod_list ul.kind_list .diff,
+.mod_education .prod_list ul.kind_list .diff,
+.mod_disease .prod_list ul.kind_list .diff {
+  border-right: 1px solid #ccc;
+  padding-left: 2em;
+}
+.mod_more {
+  padding: 1em 0;
+  text-align: center;
+  background: #fff;
+}
